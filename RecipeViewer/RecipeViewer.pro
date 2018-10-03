@@ -26,10 +26,24 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    category.cpp \
+    recipe.cpp \
+    serving.cpp \
+    ingredient.cpp \
+    ingredients.cpp \
+    recipes.cpp \
+    categories.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    category.h \
+    recipe.h \
+    serving.h \
+    ingredient.h \
+    ingredients.h \
+    recipes.h \
+    categories.h
 
 FORMS += \
         mainwindow.ui
