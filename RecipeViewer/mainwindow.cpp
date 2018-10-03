@@ -45,8 +45,6 @@ MainWindow::MainWindow(QWidget *parent) :
     wFont.setBold(false);
     ui->wRecipe->setFont(wFont);
 
-
-
     // Connections
     connect(ui->pbOpenFile, SIGNAL(clicked(bool)), this, SLOT(openFile()));
     connect(ui->pbToCategories, SIGNAL(clicked(bool)), this, SLOT(showCategories()));
@@ -169,9 +167,9 @@ void MainWindow::showRecipe()
     int index = ui->lwRecipes->currentRow();
     m_recipe = *m_recipes.recipeList()[index];
     ui->gbRecipe->setTitle(m_recipe.name());
+    ui->rwRecipe->setRating(m_recipe.difficulty());
 
     setServings(m_recipe.servings().amount());
-    showDifficulty();
     showSteps();
     showNotes();
 
@@ -192,13 +190,6 @@ void MainWindow::setServings(int servings)
     }
     ui->lServings->setText(unit);
     showIngredients();
-}
-
-void MainWindow::showDifficulty()
-{
-    QD << "in showDifficulty()";
-
-    //TODO
 }
 
 void MainWindow::showIngredients()

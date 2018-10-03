@@ -54,7 +54,6 @@ private:
     Recipes m_recipes;
     Recipe m_recipe;
 
-    void showDifficulty(void);
     void showIngredients(void);
     void showSteps(void);
     void showNotes(void);

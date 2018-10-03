@@ -33,7 +33,8 @@ SOURCES += \
     ingredient.cpp \
     ingredients.cpp \
     recipes.cpp \
-    categories.cpp
+    categories.cpp \
+    ratingwidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -43,7 +44,8 @@ HEADERS += \
     ingredient.h \
     ingredients.h \
     recipes.h \
-    categories.h
+    categories.h \
+    ratingwidget.h
 
 FORMS += \
         mainwindow.ui
